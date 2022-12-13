@@ -1,4 +1,5 @@
 @import "variables";
+@import "breakpoints";
 
 .navMenu {
   display: flex;
@@ -12,5 +13,14 @@
   .menu {
     font-size: 16px;
     font-weight: 500;
+  }
+}
+
+// ---- BREAKPOINTS ----
+@include sm {
+  .navMenu {
+    .menu {
+      font-size: 14px;
+    }
   }
 }

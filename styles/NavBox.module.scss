@@ -1,8 +1,10 @@
 @import "variables";
+@import "breakpoints";
 
 .navBox {
   position: absolute;
   right: 100px;
+  width: 200px;
 
   .logo {
     width: 200px;
@@ -13,7 +15,7 @@
     flex-direction: column;
   }
 
-  .button {
+  button {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -49,9 +51,50 @@
     }
 
     .arrowUp {
-      //   display: none;
       background: #f5911e;
       width: 100%;
+    }
+  }
+}
+
+// ---- BREAKPOINTS ----
+@include lg {
+  .navBox {
+    right: 50px;
+  }
+}
+
+@include md {
+  .navBox {
+    width: 150px;
+    .logo {
+      width: 150px;
+    }
+    .button {
+      width: 50%;
+    }
+  }
+}
+
+@include sm {
+  .navBox {
+    right: 10px;
+
+    button {
+      font-size: 12px;
+      font-weight: 500;
+
+      p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 60%;
+      }
+
+      .arrowDown {
+        margin-top: -7px;
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }

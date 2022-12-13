@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import Image from "next/image"
 
 // components
@@ -26,7 +26,7 @@ const NavBox = () => {
         />
       </div>
       <nav className={styles.navigation}>{openMenuBox && <NavMenu2 />}</nav>
-      <button className={styles.button} onClick={handleOpenMenuBox}>
+      <button onClick={handleOpenMenuBox}>
         {!openMenuBox ? (
           <>
             <p>MENU</p>

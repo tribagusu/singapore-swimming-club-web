@@ -2,7 +2,7 @@
 @import "breakpoints";
 
 .header {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -60,5 +60,12 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+// ---- BREAKPOINTS ----
+@include xl {
+  .header {
+    display: none;
   }
 }

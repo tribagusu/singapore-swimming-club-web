@@ -1,0 +1,57 @@
+@import "variables";
+
+.navBox {
+  position: absolute;
+  right: 100px;
+
+  .logo {
+    width: 200px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    margin: 0;
+    padding-top: 0;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+
+    p {
+      margin: auto;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: $primary;
+    }
+
+    .arrowDown {
+      margin-top: -10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary;
+      width: 30px;
+      height: 20px;
+      border-radius: 50%;
+    }
+
+    .arrowUp {
+      //   display: none;
+      background: #f5911e;
+      width: 100%;
+    }
+  }
+}

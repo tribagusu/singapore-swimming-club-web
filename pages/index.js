@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Hero from "../components/Hero"
+import Blogs from "../components/blogs/Blogs"
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <Blogs />
     </div>
   )
 }

@@ -1,0 +1,19 @@
+@mixin imgSlider($url) {
+  background-image: $url;
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+@mixin textSlider() {
+  position: absolute;
+  bottom: 200px;
+  left: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+}

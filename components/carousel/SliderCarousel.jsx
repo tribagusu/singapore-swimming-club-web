@@ -1,15 +1,22 @@
-import React from "react"
-import Image from "next/image"
+import React, { useState, useEffect } from "react"
 
-// media
-import img1 from "../../public/home-1.png"
-import img2 from "../../public/home-2.png"
 // react slick
 import Slider from "react-slick"
 // style
 import styles from "../../styles/SliderCarousel.module.scss"
 
-export const SliderCarousel = () => {
+const SliderCarousel = () => {
+  const [videoPlay, setVideoPlay] = useState("")
+
+  const handleVideoPlay = () => {
+    setVideoPlay("autoplay")
+  }
+
+  useEffect(() => {
+    // handleVideoPlay()
+    // console.log(window.location)
+  }, [])
+
   const settings = {
     dots: true,
     infinite: true,
@@ -19,27 +26,40 @@ export const SliderCarousel = () => {
   }
 
   return (
-    <div className={styles.slider}>
-      <Slider className={styles.sliderContainer} {...settings}>
-        <div className={styles.img1}>
-          <p>image</p>
+    <Slider className={styles.slider} {...settings}>
+      <div className={`${styles.img} ${styles.img1}`}>
+        <div className={styles.text}>
+          <h1>The Premier Family Club</h1>
+          <p>Where people make the difference</p>
         </div>
-        <div className={styles.img2}>
-          <p>image</p>
+      </div>
+      <div className={`${styles.img} ${styles.img2}`}>
+        <div className={styles.text}>
+          <h1>The Premier Family Club</h1>
+          <p>Where people make the difference</p>
         </div>
-        <video
-          className={styles.vid}
-          src={require("../../public/home-3.mp4")}
-          muted
-          style={{ width: "100%", height: "100%" }}
-        />
-        <video
-          className={styles.vid}
-          src={require("../../public/home-4.mp4")}
-          muted
-          style={{ width: "100%", height: "100%" }}
-        />
-      </Slider>
-    </div>
+      </div>
+      <video
+        className={styles.vid}
+        src={require("../../public/home-3.mp4")}
+        muted
+        autoPlay={videoPlay}
+        preload="auto"
+        loop
+        style={{ width: "100%", height: "100%" }}
+      />
+      <video
+        className={styles.vid}
+        src={require("../../public/home-4.mp4")}
+        muted
+        autoPlay={videoPlay}
+        preload="auto"
+        loop
+        type="video/mp4"
+        style={{ width: "100%", height: "100%" }}
+      />
+    </Slider>
   )
 }
+
+export default SliderCarousel

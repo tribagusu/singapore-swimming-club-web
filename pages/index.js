@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Hero from "../components/Hero"
 import Blogs from "../components/blogs/Blogs"
+import News from "../components/news/News"
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       </Head>
       <Hero />
       <Blogs />
+      <News />
     </div>
   )
 }

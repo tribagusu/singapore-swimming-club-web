@@ -7,7 +7,7 @@ import NavMenu2 from "./NavMenu2"
 import Logo from "../../../public/logo.png"
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io"
 // style
-import styles from "../../../styles/NavBox.module.scss"
+import styles from "../../../styles/nav/NavBox.module.scss"
 
 const NavBox = () => {
   const [openMenuBox, setOpenMenuBox] = useState(false)

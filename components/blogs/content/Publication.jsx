@@ -6,7 +6,9 @@ import styles from "../../../styles/blogs/Publication.module.scss"
 const Publication = () => {
   return (
     <article className={styles.publication}>
-      <div className="container">Publication</div>
+      <div className="container">
+        <h2>These are Publications</h2>
+      </div>
     </article>
   )
 }

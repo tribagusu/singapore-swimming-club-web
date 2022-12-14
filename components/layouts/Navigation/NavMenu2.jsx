@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 // style
-import styles from "../../../styles/NavMenu2.module.scss"
+import styles from "../../../styles/nav/NavMenu2.module.scss"
 
 const NavMenu2 = () => {
   return (

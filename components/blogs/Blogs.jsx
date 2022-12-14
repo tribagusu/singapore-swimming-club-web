@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Link from "next/link"
 import { withRouter } from "next/router"
 
@@ -18,12 +18,20 @@ const Blogs = ({ router }) => {
   const isEvents = blog === "events"
   const isPublication = blog === "publication"
 
+  // Blog Show Button
+  const [blogShowBtn, setBlogShowBtn] = useState("featured")
+  const handleShowFeatured = () => setBlogShowBtn("featured")
+  const handleShowEvents = () => setBlogShowBtn("events")
+  const handleShowPublication = () => setBlogShowBtn("publication")
+
   return (
     <section className={styles.blogs}>
       <div className={styles.container}>
         <div className={styles.tabs}>
           <Link
+            id={blogShowBtn === "featured" ? "blogBtnActive" : ""}
             className={`${styles.tab} ${styles.featured}`}
+            onClick={handleShowFeatured}
             selected={isFeatured}
             href={{ pathname: "/", query: { blog: "featured" } }}
             scroll={false}
@@ -31,7 +39,9 @@ const Blogs = ({ router }) => {
             Featured
           </Link>
           <Link
+            id={blogShowBtn === "events" ? "blogBtnActive" : ""}
             className={`${styles.tab} ${styles.events}`}
+            onClick={handleShowEvents}
             selected={isEvents}
             href={{ pathname: "/", query: { blog: "events" } }}
             scroll={false}
@@ -39,7 +49,9 @@ const Blogs = ({ router }) => {
             Events
           </Link>
           <Link
+            id={blogShowBtn === "publication" ? "blogBtnActive" : ""}
             className={`${styles.tab} ${styles.publication}`}
+            onClick={handleShowPublication}
             selected={isPublication}
             href={{ pathname: "/", query: { blog: "publication" } }}
             scroll={false}

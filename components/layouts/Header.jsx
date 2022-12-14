@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
 // media
 import { BsSearch } from "react-icons/bs"
 import Logo from "../../public/logo.png"
@@ -32,13 +33,13 @@ const Header = () => {
       {navbar ? (
         <header className={styles.header}>
           <div className={styles.container}>
-            <div className={styles.logo}>
+            <Link className={styles.logo} href="/">
               <Image
                 src={Logo}
                 alt="logo"
                 style={{ width: "100%", height: "100%" }}
               />
-            </div>
+            </Link>
             <nav className={styles.navigation}>
               <NavMenu1 />
             </nav>

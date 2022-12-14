@@ -3,11 +3,14 @@
 
 .navBox {
   position: absolute;
+  z-index: 99;
   right: 100px;
   width: 200px;
 
   .logo {
+    display: flex;
     width: 200px;
+    margin: auto;
   }
 
   .navigation {
@@ -78,7 +81,10 @@
 
 @include sm {
   .navBox {
-    right: 10px;
+    .logo {
+      width: 90px;
+    }
+    right: 5px;
 
     button {
       font-size: 12px;

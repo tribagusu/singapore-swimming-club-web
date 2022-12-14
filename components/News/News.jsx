@@ -19,7 +19,7 @@ const News = () => {
             <p>
               Please be informed that due to the haze, breakfast will be served
               at The Palms from <strong>8.00 am to 10.45am.</strong> Members are
-              to observe the dress code required at The Palms. <br />
+              to observe the dress code required at The Palms. <br /> <br />
               <strong>Dress Code at The Palms</strong> <br /> Soiled or wet
               clothing and swimmer are not allowed.
             </p>
@@ -30,8 +30,8 @@ const News = () => {
             <h4>pro shop operation hours</h4>
             <p>
               Please be informed of the Pro Shop&apos;s new operating hours.
-              <br /> Monday - Wednesday & Friday : 3pm - 8pm <br /> Saturday &
-              Sunday : 12pm - 8pm <br /> Thursday : CLOSED
+              <br /> <br /> Monday - Wednesday & Friday : 3pm - 8pm <br />{" "}
+              Saturday & Sunday : 12pm - 8pm <br /> Thursday : CLOSED
             </p>
           </article>
 
@@ -44,7 +44,7 @@ const News = () => {
                 Please be informed that due to the haze, breakfast will be
                 served at The Palms from <strong>8.00 am to 10.45am.</strong>{" "}
                 Members are to observe the dress code required at The Palms.{" "}
-                <br />
+                <br /> <br />
                 <strong>Dress Code at The Palms</strong> <br /> Soiled or wet
                 clothing and swimmer are not allowed.
               </p>
@@ -57,8 +57,8 @@ const News = () => {
               <h4>pro shop operation hours</h4>
               <p>
                 Please be informed of the Pro Shop&apos;s new operating hours.
-                <br /> Monday - Wednesday & Friday : 3pm - 8pm <br /> Saturday &
-                Sunday : 12pm - 8pm <br /> Thursday : CLOSED
+                <br /> <br /> Monday - Wednesday & Friday : 3pm - 8pm <br />{" "}
+                Saturday & Sunday : 12pm - 8pm <br /> Thursday : CLOSED
               </p>
             </article>
           )}

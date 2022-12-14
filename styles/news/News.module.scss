@@ -1,14 +1,17 @@
+@import "../breakpoints";
+
 .news {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 50px;
 
   .container {
     display: flex;
     flex-direction: column;
     width: 1400px;
-    min-height: 800px;
+    min-height: 450px;
     padding-left: 50px;
     padding-right: 50px;
 
@@ -33,6 +36,11 @@
         padding-left: 20px;
         padding-right: 20px;
         border-left: 3px solid #0071ba;
+
+        h4 {
+          text-transform: uppercase;
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -49,6 +57,36 @@
 
     button:hover {
       color: #104263;
+    }
+  }
+}
+
+// ---- BREAKPOINTS ----
+@include lg {
+  .news {
+    .container {
+      padding-left: 100px;
+      padding-right: 100px;
+
+      .articles {
+        article {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@include sm {
+  .news {
+    .container {
+      padding-left: 50px;
+      padding-right: 50px;
+      .articles {
+        article {
+          width: 100%;
+        }
+      }
     }
   }
 }

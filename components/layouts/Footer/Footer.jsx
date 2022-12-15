@@ -4,7 +4,7 @@ import Link from "next/link"
 
 // components
 import FooterLinks from "./FooterLinks"
-// import GoogleMaps from "./GoogleMaps"
+import GoogleMaps from "./GoogleMaps"
 // import Maps from "./Maps"
 // media
 import logo2 from "../../../public/logo2.jpg"
@@ -32,11 +32,7 @@ const Footer = () => {
               </p>
             </div>
             <div className={styles.maps}>
-              <Image
-                src={maps}
-                alt="maps"
-                style={{ width: "100%", height: "100%" }}
-              />
+              <GoogleMaps />
             </div>
           </div>
 

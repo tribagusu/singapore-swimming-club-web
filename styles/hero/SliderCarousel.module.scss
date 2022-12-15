@@ -1,4 +1,4 @@
-@import "breakpoints";
+@import "../breakpoints";
 
 // ---- STYLES ----
 .slider {
@@ -32,10 +32,10 @@
       }
     }
     &.img1 {
-      background-image: url(../public//home-1.png);
+      background-image: url(../../public//home-1.png);
     }
     &.img2 {
-      background-image: url(../public//home-2.png);
+      background-image: url(../../public//home-2.png);
     }
   }
 

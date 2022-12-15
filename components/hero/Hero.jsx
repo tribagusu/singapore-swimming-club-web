@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 
 // components
-import SliderCarousel from "./carousel/SliderCarousel"
+import SliderCarousel from "./SliderCarousel"
 // style
-import styles from "../styles/Hero.module.scss"
+import styles from "../../styles/hero/Hero.module.scss"
 
 const Hero = () => {
   return (

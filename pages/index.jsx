@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Hero from "../components/Hero"
+import Hero from "../components/hero/Hero"
 import Blogs from "../components/blogs/Blogs"
 import News from "../components/news/News"
 import UpcomingNews from "../components/news/UpcomingNews"

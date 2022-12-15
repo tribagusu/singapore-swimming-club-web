@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react"
 // react slick
 import Slider from "react-slick"
 // style
-import styles from "../../styles/SliderCarousel.module.scss"
+import styles from "../../styles/hero/SliderCarousel.module.scss"
 
 const SliderCarousel = () => {
   const [videoPlay, setVideoPlay] = useState("")

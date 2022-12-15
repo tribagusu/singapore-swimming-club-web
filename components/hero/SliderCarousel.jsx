@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
+import ReactPlayer from "react-player"
 
 // react slick
 import Slider from "react-slick"
@@ -6,16 +7,22 @@ import Slider from "react-slick"
 import styles from "../../styles/hero/SliderCarousel.module.scss"
 
 const SliderCarousel = () => {
-  const [videoPlay, setVideoPlay] = useState("")
-
-  const handleVideoPlay = () => {
-    setVideoPlay("autoplay")
-  }
+  const [videoPlay, setVideoPlay] = useState("autoplay")
+  const [activeSlide, setActiveSlide] = useState(0)
+  const [activeSlide2, setActiveSlide2] = useState(0)
 
   useEffect(() => {
-    // handleVideoPlay()
-    // console.log(window.location)
-  }, [])
+    if (
+      Number(Object.values(activeSlide2).join()) !== 2 ||
+      Number(Object.values(activeSlide2).join()) !== 3
+    ) {
+      setVideoPlay("paused")
+    } else {
+      setVideoPlay("autoplay")
+    }
+  }, [activeSlide2])
+
+  // console.log(activeSlide, activeSlide2)
 
   const settings = {
     dots: true,
@@ -23,6 +30,8 @@ const SliderCarousel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    beforeChange: (current, next) => setActiveSlide({ activeSlide: next }),
+    afterChange: (current) => setActiveSlide2({ activeSlide2: current }),
   }
 
   return (
@@ -39,21 +48,20 @@ const SliderCarousel = () => {
           <p>Where people make the difference</p>
         </div>
       </div>
+
       <video
         className={styles.vid}
         src={require("../../public/home-3.mp4")}
-        muted
         autoPlay={videoPlay}
-        preload="auto"
+        muted
         loop
         style={{ width: "100%", height: "100%" }}
       />
       <video
         className={styles.vid}
         src={require("../../public/home-4.mp4")}
-        muted
         autoPlay={videoPlay}
-        preload="auto"
+        muted
         loop
         style={{ width: "100%", height: "100%" }}
       />

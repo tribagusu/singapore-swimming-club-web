@@ -32,11 +32,11 @@ const Blogs = ({ router }) => {
             id={
               blogShowBtn === "featured"
                 ? "blog-btn-active"
-                : "blog-btn-passive"
+                : "blog-btn-featured"
             }
             className={`${styles.tab} ${styles.featured}`}
             onClick={handleShowFeatured}
-            selected={isFeatured}
+            // selected={isFeatured}
             href={{ pathname: "/", query: { blog: "featured" } }}
             scroll={false}
           >
@@ -44,11 +44,11 @@ const Blogs = ({ router }) => {
           </Link>
           <Link
             id={
-              blogShowBtn === "events" ? "blog-btn-active" : "blog-btn-passive"
+              blogShowBtn === "events" ? "blog-btn-active" : "blog-btn-events"
             }
             className={`${styles.tab} ${styles.events}`}
             onClick={handleShowEvents}
-            selected={isEvents}
+            // selected={isEvents}
             href={{ pathname: "/", query: { blog: "events" } }}
             scroll={false}
           >
@@ -58,11 +58,11 @@ const Blogs = ({ router }) => {
             id={
               blogShowBtn === "publication"
                 ? "blog-btn-active"
-                : "blog-btn-passive"
+                : "blog-btn-publication"
             }
             className={`${styles.tab} ${styles.publication}`}
             onClick={handleShowPublication}
-            selected={isPublication}
+            // selected={isPublication}
             href={{ pathname: "/", query: { blog: "publication" } }}
             scroll={false}
           >

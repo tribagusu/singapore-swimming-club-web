@@ -29,13 +29,13 @@ const NavBox = () => {
       <button onClick={handleOpenMenuBox}>
         {!openMenuBox ? (
           <>
-            <div>MENU</div>
-            <span className={styles.arrowDown}></span>
+            <span>MENU</span>
+            <i className={styles.arrowDown}></i>
           </>
         ) : (
-          <span className={styles.arrowUp}>
+          <i className={styles.arrowUp}>
             <IoIosArrowUp />
-          </span>
+          </i>
         )}
       </button>
     </div>

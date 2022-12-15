@@ -29,7 +29,7 @@ const NavBox = () => {
       <button onClick={handleOpenMenuBox}>
         {!openMenuBox ? (
           <>
-            <p>MENU</p>
+            <div>MENU</div>
             <span className={styles.arrowDown}></span>
           </>
         ) : (

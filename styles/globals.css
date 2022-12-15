@@ -24,7 +24,7 @@ a {
 }
 
 /* ----- Blog Show Button ----- */
-#blogBtnActive {
+#blog-btn-active {
   background: #0071ba;
   border: 1px solid #0071ba;
   color: #fff;

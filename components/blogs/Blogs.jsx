@@ -29,7 +29,11 @@ const Blogs = ({ router }) => {
       <div className={styles.container}>
         <div className={styles.tabs}>
           <Link
-            id={blogShowBtn === "featured" ? "blogBtnActive" : ""}
+            id={
+              blogShowBtn === "featured"
+                ? "blog-btn-active"
+                : "blog-btn-passive"
+            }
             className={`${styles.tab} ${styles.featured}`}
             onClick={handleShowFeatured}
             selected={isFeatured}
@@ -39,7 +43,9 @@ const Blogs = ({ router }) => {
             Featured
           </Link>
           <Link
-            id={blogShowBtn === "events" ? "blogBtnActive" : ""}
+            id={
+              blogShowBtn === "events" ? "blog-btn-active" : "blog-btn-passive"
+            }
             className={`${styles.tab} ${styles.events}`}
             onClick={handleShowEvents}
             selected={isEvents}
@@ -49,7 +55,11 @@ const Blogs = ({ router }) => {
             Events
           </Link>
           <Link
-            id={blogShowBtn === "publication" ? "blogBtnActive" : ""}
+            id={
+              blogShowBtn === "publication"
+                ? "blog-btn-active"
+                : "blog-btn-passive"
+            }
             className={`${styles.tab} ${styles.publication}`}
             onClick={handleShowPublication}
             selected={isPublication}

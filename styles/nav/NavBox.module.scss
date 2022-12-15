@@ -45,8 +45,8 @@
     .arrowDown {
       width: 0;
       height: 0;
-      border-left: 30px solid transparent;
-      border-right: 30px solid transparent;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
       border-top: 10px solid $primary;
     }
 
@@ -71,25 +71,14 @@
 @include md {
   .navBox {
     width: 150px;
+    right: 20px;
+
     .logo {
       width: 150px;
     }
-    .button {
-      width: 50%;
-    }
-  }
-}
-
-@include sm {
-  .navBox {
-    width: 120px;
-    .logo {
-      width: 120px;
-    }
-    right: 5px;
 
     button {
-      font-size: 12px;
+      font-size: 14px;
 
       .arrowDown {
         border-left: 10px solid transparent;
@@ -100,6 +89,21 @@
       .arrowUp {
         height: 25px;
       }
+    }
+  }
+}
+
+@include sm {
+  .navBox {
+    width: 120px;
+    right: 10px;
+
+    .logo {
+      width: 120px;
+    }
+
+    button {
+      font-size: 12px;
     }
   }
 }

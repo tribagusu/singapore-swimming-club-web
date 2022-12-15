@@ -1,0 +1,49 @@
+@import "variables";
+@import "breakpoints";
+
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-weight: 500;
+
+    p {
+      margin: 0;
+    }
+
+    p:hover {
+      color: $accent;
+    }
+  }
+}
+
+// ---- BREAKPOINTS ----
+@include md {
+  .footerLinks {
+    gap: 30px;
+  }
+}
+
+@include sm {
+  .footerLinks {
+    flex-wrap: wrap;
+    gap: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    .links {
+      width: 100%;
+      margin-bottom: 10px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #818181;
+      p {
+        line-height: 1.4;
+      }
+    }
+  }
+}

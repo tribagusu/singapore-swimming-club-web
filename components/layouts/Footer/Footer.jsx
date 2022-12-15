@@ -3,12 +3,14 @@ import Image from "next/image"
 import Link from "next/link"
 
 // components
-import FooterLinks from "./Footer/FooterLinks"
-import GoogleMaps from "./Footer/GoogleMaps"
+import FooterLinks from "./FooterLinks"
+// import GoogleMaps from "./GoogleMaps"
+// import Maps from "./Maps"
 // media
-import logo2 from "../../public/logo2.jpg"
+import logo2 from "../../../public/logo2.jpg"
+import maps from "../../../public/maps.jpg"
 // style
-import styles from "../../styles/Footer.module.scss"
+import styles from "../../../styles/Footer.module.scss"
 
 const Footer = () => {
   return (
@@ -30,7 +32,11 @@ const Footer = () => {
               </p>
             </div>
             <div className={styles.maps}>
-              <GoogleMaps />
+              <Image
+                src={maps}
+                alt="maps"
+                style={{ width: "100%", height: "100%" }}
+              />
             </div>
           </div>
 

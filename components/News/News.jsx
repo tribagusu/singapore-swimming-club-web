@@ -6,7 +6,9 @@ import styles from "../../styles/news/News.module.scss"
 const News = () => {
   const [showNews, setShowNews] = useState(false)
 
-  const handleShowNews = () => setShowNews(true)
+  const handleShowNews = () => {
+    setShowNews(true)
+  }
 
   return (
     <section className={styles.news}>

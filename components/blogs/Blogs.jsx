@@ -25,7 +25,7 @@ const Blogs = ({ router }) => {
   const handleShowPublication = () => setBlogShowBtn("publication")
 
   return (
-    <section className={styles.blogs}>
+    <div className={styles.blogs}>
       <div className={styles.container}>
         <div className={styles.tabs}>
           <Link
@@ -70,13 +70,13 @@ const Blogs = ({ router }) => {
           </Link>
         </div>
 
-        <article className={styles.content}>
+        <div className={styles.content}>
           {isFeatured && <Featured />}
           {isEvents && <Events />}
           {isPublication && <Publication />}
-        </article>
+        </div>
       </div>
-    </section>
+    </div>
   )
 }
 

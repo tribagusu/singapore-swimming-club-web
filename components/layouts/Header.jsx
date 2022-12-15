@@ -5,7 +5,7 @@ import Link from "next/link"
 import { BsSearch } from "react-icons/bs"
 import Logo from "../../public/logo.png"
 // components
-import NavMenu1 from "./Navigation/NavMenu1"
+import NavBarMenu from "./Navigation/NavBarMenu"
 // styles
 import styles from "../../styles/Header.module.scss"
 import NavBox from "./Navigation/NavBox"
@@ -41,7 +41,7 @@ const Header = () => {
               />
             </Link>
             <nav className={styles.navigation}>
-              <NavMenu1 />
+              <NavBarMenu />
             </nav>
             <div id={openSearchBox} className={styles.searchBox}>
               <input className={styles.searchInput} type="text" />

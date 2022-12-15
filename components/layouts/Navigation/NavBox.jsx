@@ -2,7 +2,7 @@ import { useState } from "react"
 import Image from "next/image"
 
 // components
-import NavMenu2 from "./NavMenu2"
+import NavBoxMenu from "./NavBoxMenu"
 // media
 import Logo from "../../../public/logo.png"
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io"
@@ -25,7 +25,7 @@ const NavBox = () => {
           style={{ width: "100%", height: "100%" }}
         />
       </div>
-      <nav className={styles.navigation}>{openMenuBox && <NavMenu2 />}</nav>
+      <nav className={styles.navigation}>{openMenuBox && <NavBoxMenu />}</nav>
       <button onClick={handleOpenMenuBox}>
         {!openMenuBox ? (
           <>

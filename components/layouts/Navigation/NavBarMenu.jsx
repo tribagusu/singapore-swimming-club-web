@@ -1,9 +1,9 @@
 import React from "react"
 import Link from "next/link"
 // style
-import styles from "../../../styles/nav/NavMenu1.module.scss"
+import styles from "../../../styles/nav/NavBarMenu.module.scss"
 
-const NavMenu1 = () => {
+const NavBarMenu = () => {
   return (
     <nav className={styles.navMenu}>
       <Link className={styles.menu} href="#">
@@ -34,4 +34,4 @@ const NavMenu1 = () => {
   )
 }
 
-export default NavMenu1
+export default NavBarMenu

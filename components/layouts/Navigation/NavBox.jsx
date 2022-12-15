@@ -30,9 +30,7 @@ const NavBox = () => {
         {!openMenuBox ? (
           <>
             <p>MENU</p>
-            <span className={styles.arrowDown}>
-              <IoIosArrowDown />
-            </span>
+            <span className={styles.arrowDown}></span>
           </>
         ) : (
           <span className={styles.arrowUp}>

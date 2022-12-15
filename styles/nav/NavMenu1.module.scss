@@ -1,3 +1,6 @@
+@import "../variables";
+@import "../breakpoints";
+
 .navMenu {
   display: flex;
   align-items: center;
@@ -6,5 +9,9 @@
   .menu {
     font-size: 16px;
     font-weight: 500;
+  }
+
+  .menu:hover {
+    color: $accent;
   }
 }

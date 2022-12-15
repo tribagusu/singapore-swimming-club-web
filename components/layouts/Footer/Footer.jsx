@@ -5,10 +5,8 @@ import Link from "next/link"
 // components
 import FooterLinks from "./FooterLinks"
 import GoogleMaps from "./GoogleMaps"
-// import Maps from "./Maps"
 // media
 import logo2 from "../../../public/logo2.jpg"
-import maps from "../../../public/maps.jpg"
 // style
 import styles from "../../../styles/Footer.module.scss"
 

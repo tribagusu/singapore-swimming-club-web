@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
-import ReactPlayer from "react-player"
+import React, { useState, useEffect } from "react"
 
 // react slick
 import Slider from "react-slick"
